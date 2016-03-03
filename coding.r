@@ -2,5 +2,4 @@
 library(fda)
 
 ## importing the data
-
 read.table
