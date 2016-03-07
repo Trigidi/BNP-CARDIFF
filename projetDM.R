@@ -4,7 +4,7 @@ setwd(dir = "C:/Users/Goddi/Desktop/Euria et actuariat/2nd semestre/Data mining/
 base=read.csv("train.csv",header = T, sep=",",dec=".")
 test=read.csv("test.csv",header = T, sep=",",dec=".")
 table(base$target)
-table(is.na(base$target)) # pas de données manquantes dans la variable cible de la bse d'appentissage
+table(is.na(base$target)) # pas de donnÃ©es manquantes dans la variable cible de la bse d'appentissage
 library("FactoMineR", lib.loc="C:/Program Files/R/R-3.2.0/library")
 library("missMDA", lib.loc="C:/Program Files/R/R-3.2.0/library")
 library("rattle", lib.loc="C:/Program Files/R/R-3.2.0/library")
@@ -21,3 +21,5 @@ PCA(base, scale.unit = TRUE, ncp = 5, ind.sup = NULL,
     quanti.sup = NULL, quali.sup = qua, row.w = NULL, 
     col.w = NULL, graph = TRUE, axes = c(1,2))
 memory.limit()
+
+print()
